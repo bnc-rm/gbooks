@@ -27,6 +27,8 @@
 
 	<xsl:template match="//marc:datafield[@tag='955']">
 		<xsl:value-of select="marc:subfield[@code='b']" />
+		<xsl:text>	</xsl:text>
+		<xsl:value-of select="marc:subfield[@code='3']" />
 	</xsl:template>
 
 	<!-- Se il 260$c è presente, purtroppo può essere multiplo, come verificato 
